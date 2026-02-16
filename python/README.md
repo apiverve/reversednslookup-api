@@ -221,8 +221,9 @@ from apiverve_reversednslookup.apiClient import ReversednslookupAPIClient
 
 api = ReversednslookupAPIClient("[YOUR_API_KEY]")
 
+query = { "ip": "8.8.8.8" }
+
 try:
-    query = { "ip": "8.8.8.8" }
     result = api.execute(query)
     print(result)
 finally:
