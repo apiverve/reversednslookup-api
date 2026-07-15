@@ -4,19 +4,31 @@ declare module '@apiverve/reversednslookup' {
     secure?: boolean;
   }
 
+  /**
+   * Describes fields the current plan does not unlock. Locked fields arrive as null
+   * in `data`; `locked_fields` names them, using dot paths for nested fields.
+   * Absent when the plan unlocks everything.
+   */
+  export interface PremiumInfo {
+    message: string;
+    upgrade_url: string;
+    locked_fields: string[];
+  }
+
   export interface reversednslookupResponse {
     status: string;
     error: string | null;
     data: ReverseDNSLookupData;
     code?: number;
+    premium?: PremiumInfo;
   }
 
 
   interface ReverseDNSLookupData {
-      ip:       string;
-      hostname: string;
-      ptr:      string[];
-      found:    boolean;
+      ip:       null | string;
+      hostname: null | string;
+      ptr:      (null | string)[];
+      found:    boolean | null;
   }
 
   export default class reversednslookupWrapper {
