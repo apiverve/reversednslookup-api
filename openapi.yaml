@@ -2,8 +2,9 @@ openapi: 3.0.4
 info:
   title: Reverse DNS Lookup
   description: >-
-    Reverse DNS Lookup is a tool for finding the hostname associated with an IP
-    address. It returns the PTR record for the given IP.
+    Reverse DNS Lookup resolves IPv4 and IPv6 addresses into their associated
+    hostnames via PTR records. Pass any IP address to check if reverse records
+    exist and receive all matching hostnames.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
