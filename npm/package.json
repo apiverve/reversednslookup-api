@@ -1,7 +1,7 @@
 {
   "name": "@apiverve/reversednslookup",
-  "version": "1.2.0",
-  "description": "Reverse DNS Lookup is a tool for finding the hostname associated with an IP address. It returns the PTR record for the given IP.",
+  "version": "1.2.2",
+  "description": "Reverse DNS Lookup resolves IPv4 and IPv6 addresses into their associated hostnames via PTR records. Pass any IP address to check if reverse records exist and receive all matching hostnames.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
@@ -23,7 +23,7 @@
     "directory": "npm"
   },
   "keywords": [
-    "reverse dns", "reverse dns lookup", "ptr record", "ptr lookup", "ip to hostname"
+    "reverse dns lookup api", "reverse ip lookup api", "reverse dns api", "reverse ip api", "ptr lookup api"
   ],
   "author": {
     "name": "APIVerve",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/reversednslookup-api/issues"
   },
-  "homepage": "https://apiverve.com/marketplace/reversednslookup?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/reversednslookup?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",
