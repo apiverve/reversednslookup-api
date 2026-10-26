@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/reversednslookup",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Reverse DNS Lookup resolves IPv4 and IPv6 addresses into their associated hostnames via PTR records. Pass any IP address to check if reverse records exist and receive all matching hostnames.",
   "main": "index.js",
   "types": "index.d.ts",
