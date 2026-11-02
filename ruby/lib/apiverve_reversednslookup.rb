@@ -4,6 +4,6 @@ require_relative "apiverve_reversednslookup/client"
 
 module APIVerve
   module Reversednslookup
-    VERSION = "1.2.2"
+    VERSION = "1.2.4"
   end
 end
